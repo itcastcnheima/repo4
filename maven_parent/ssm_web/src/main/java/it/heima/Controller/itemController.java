@@ -19,6 +19,7 @@ public class itemController  {
     public String findById(int id, Model model){
         item byId = service.findById(id);
         model.addAttribute("item",byId);
+        ///6666666
         return "itemDetail";
     }
 }
