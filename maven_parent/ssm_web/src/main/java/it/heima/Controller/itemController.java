@@ -22,4 +22,10 @@ public class itemController  {
         ///6666666
         return "itemDetail";
     }
+    public String find(int id, Model model){
+        item byId = service.findById(id);
+        model.addAttribute("item",byId);
+        ////////////
+        return "itemDetail";
+    }
 }
